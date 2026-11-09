@@ -27,11 +27,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-[#EDF2F8]">
           {/* Column 1: Clinic Brand & Info (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="relative h-11 w-44">
+            <div className="relative h-12 w-52">
               <Image
-                src="/smilecarelogo.png"
+                src="/smilecare-footer-blue.png"
                 alt="SmileCare Medical Center"
                 fill
+                priority
                 className="object-contain object-left"
               />
             </div>
