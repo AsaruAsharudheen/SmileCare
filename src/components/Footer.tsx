@@ -22,14 +22,14 @@ export default function Footer() {
   };
 
   return (
-    <footer id="footer" className="bg-white border-t border-[#E5EAF2] pt-14 pb-8 text-[#596579]">
+    <footer id="footer" className="bg-[#0861A8] pt-14 pb-8 text-blue-100">
       <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-[#EDF2F8]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-white/15">
           {/* Column 1: Clinic Brand & Info (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
             <div className="relative h-12 w-52">
               <Image
-                src="/smilecare-footer-blue.png"
+                src="/logosmall-wkite.png"
                 alt="SmileCare Medical Center"
                 fill
                 priority
@@ -37,36 +37,36 @@ export default function Footer() {
               />
             </div>
 
-            <p className="text-[13px] leading-relaxed text-[#596579]">
+            <p className="text-[13px] leading-relaxed text-blue-100">
               Specialist dental clinic located on the Al Buhaira Corniche in Sharjah, delivering cutting-edge dental restorations, implantology, and cosmetic transformations.
             </p>
 
             <div className="pt-2 text-[12px] space-y-2">
               <p className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#0861A8] shrink-0 mt-0.5" />
-                <span>{CLINIC_CONTACT.address}</span>
+                <MapPin className="w-4 h-4 text-white shrink-0 mt-0.5" />
+                <span className="text-white font-medium">{CLINIC_CONTACT.address}</span>
               </p>
               <p className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#0861A8] shrink-0" />
-                <span>{CLINIC_CONTACT.phone}</span>
+                <Phone className="w-4 h-4 text-white shrink-0" />
+                <span className="text-white font-medium">{CLINIC_CONTACT.phone}</span>
               </p>
               <p className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-[#0861A8] shrink-0" />
-                <span>{CLINIC_CONTACT.email}</span>
+                <Mail className="w-4 h-4 text-white shrink-0" />
+                <span className="text-white font-medium">{CLINIC_CONTACT.email}</span>
               </p>
             </div>
           </div>
 
           {/* Column 2: Quick Links (2 cols) */}
           <div className="lg:col-span-2">
-            <h4 className="text-[14px] font-bold text-[#111C35] uppercase tracking-wider mb-4">
+            <h4 className="text-[14px] font-bold text-white uppercase tracking-wider mb-4">
               Quick Links
             </h4>
             <ul className="space-y-2.5 text-[13px]">
               {["About Smilecare", "Our Specialists", "Patient Education", "Smile Gallery", "Book Appointment", "Emergency Dental"].map(
                 (item) => (
                   <li key={item}>
-                    <a href="#procedures" className="hover:text-[#0861A8] transition-colors">
+                    <a href="#procedures" className="text-blue-100 hover:text-white transition-colors">
                       {item}
                     </a>
                   </li>
@@ -77,7 +77,7 @@ export default function Footer() {
 
           {/* Column 3: Dental Procedures (3 cols) */}
           <div className="lg:col-span-3">
-            <h4 className="text-[14px] font-bold text-[#111C35] uppercase tracking-wider mb-4">
+            <h4 className="text-[14px] font-bold text-white uppercase tracking-wider mb-4">
               Dental Procedures
             </h4>
             <ul className="space-y-2.5 text-[13px]">
@@ -90,7 +90,7 @@ export default function Footer() {
                 "Pediatric & Family Dentistry",
               ].map((item) => (
                 <li key={item}>
-                  <a href="#procedures" className="hover:text-[#0861A8] transition-colors">
+                  <a href="#procedures" className="text-blue-100 hover:text-white transition-colors">
                     {item}
                   </a>
                 </li>
@@ -100,19 +100,19 @@ export default function Footer() {
 
           {/* Column 4: Hours & Location (3 cols) */}
           <div className="lg:col-span-3">
-            <h4 className="text-[14px] font-bold text-[#111C35] uppercase tracking-wider mb-4">
+            <h4 className="text-[14px] font-bold text-white uppercase tracking-wider mb-4">
               Visiting Hours
             </h4>
-            <div className="space-y-2 text-[13px] mb-4">
-              <p className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-[#0861A8]" />
-                <span className="font-semibold text-[#111C35]">Saturday – Thursday:</span>
+            <div className="space-y-2 text-[13px] mb-4 text-blue-100">
+              <p className="flex items-center gap-2 text-white">
+                <Clock className="w-4 h-4 text-[#FF751C]" />
+                <span className="font-semibold text-white">Saturday – Thursday:</span>
               </p>
-              <p className="text-[12px] pl-6 text-[#596579]">09:00 AM – 09:00 PM</p>
+              <p className="text-[12px] pl-6 text-blue-100 font-medium">09:00 AM – 09:00 PM</p>
               <p className="flex items-center gap-2 pt-1">
-                <span className="w-2 h-2 rounded-full bg-red-400 ml-1 mr-1" />
-                <span className="font-semibold text-[#111C35]">Friday:</span>
-                <span className="text-red-500 text-[12px]">Emergency On Call Only</span>
+                <span className="w-2 h-2 rounded-full bg-orange-400 ml-1 mr-1" />
+                <span className="font-semibold text-white">Friday:</span>
+                <span className="text-orange-200 text-[12px] font-medium">Emergency On Call Only</span>
               </p>
             </div>
 
@@ -120,7 +120,7 @@ export default function Footer() {
               href="https://maps.google.com"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center w-full px-4 py-2.5 rounded-xl border border-[#D5E1F0] hover:border-[#0861A8] bg-[#EFF4FF] text-[#0861A8] text-xs font-bold transition-all"
+              className="inline-flex items-center justify-center w-full px-4 py-2.5 rounded-xl bg-white text-[#0861A8] hover:bg-blue-50 text-xs font-bold transition-all shadow"
             >
               View Google Maps Location
             </a>
@@ -128,12 +128,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-[12px] text-[#7A889B] gap-4">
-          <p>© 2026 Smilecare Medical Center LLC. All Rights Reserved. MOH Approval #2026/D7881.</p>
-          <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-[#0861A8]">Privacy Policy</a>
-            <a href="#" className="hover:text-[#0861A8]">Terms of Service</a>
-            <a href="#" className="hover:text-[#0861A8]">Patient Rights</a>
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-[12px] text-blue-200 gap-4">
+          <p>© 2026 SmileCare Medical Center LLC. All Rights Reserved. MOH Approval #2026/D7881.</p>
+          <div className="flex items-center gap-6 text-blue-200">
+            <a href="#" className="hover:text-white">Privacy Policy</a>
+            <a href="#" className="hover:text-white">Terms of Service</a>
+            <a href="#" className="hover:text-white">Patient Rights</a>
           </div>
         </div>
       </div>
